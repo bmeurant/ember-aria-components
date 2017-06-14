@@ -1,0 +1,15 @@
+<ul id="inline">
+    <li class="aria-link-to">{{link-to 'An aria label' 'arialinkto.other' aria-label='An aria label'}}</li>
+    <li class="aria-link-to-active">{{link-to 'An active aria current' 'arialinkto.index' aria-label='An active aria current' aria-current='step'}}</li>
+    <li class="aria-link-to-active-default">{{link-to 'An active aria current with default' 'arialinkto.index' aria-label='An active aria current with default'}}</li>
+    <li class="aria-link-to-unactive">{{link-to 'An unactive aria current' 'arialinkto.other' aria-label='An unactive aria current' aria-current='step'}}</li>
+</ul>
+
+<ul id="block">
+    <li class="aria-link-to">{{#link-to 'arialinkto.other' aria-label='An aria label'}}An aria label{{/link-to}}</li>
+    <li class="aria-link-to-active">{{#link-to 'arialinkto.index' aria-label='An active aria current' aria-current='step'}}An active aria current{{/link-to}}</li>
+    <li class="aria-link-to-active-default">{{#link-to 'arialinkto.index' aria-label='An active aria current with default'}}An aria label{{/link-to}}</li>
+    <li class="aria-link-to-unactive">{{#link-to 'arialinkto.other' aria-label='An unactive aria current' aria-current='step'}}An unactive aria current{{/link-to}}</li>
+</ul>
+
+{{outlet}}

@@ -1,0 +1,1 @@
+export { default, initialize } from 'ember-aria-components/initializers/aria-link-to';
